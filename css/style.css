@@ -7,3 +7,17 @@
     border-bottom: 3px solid black;
     
 }
+.hero{
+    height: 500px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../IMGS/Background_hero.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.steve{
+    width: 400px;
+    height: 400px;
+}
+.hero:hover .steve{
+    transform: scale(1.2);
+    transition: all 0.5s ease-in;
+}
