@@ -18,8 +18,8 @@
     background-position: center;
 }
 .steve{
-    width: 360px;
-    height: 370px;
+    width: 400px;
+    height: 450px;
 }
 .hero:hover .steve{
     transform: scale(1.3);
