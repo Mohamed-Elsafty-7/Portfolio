@@ -22,7 +22,7 @@
     height: 450px;
 }
 .hero:hover .steve{
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: all 0.5s ease-in;
 }
 
