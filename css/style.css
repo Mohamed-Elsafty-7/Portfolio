@@ -19,7 +19,7 @@
 }
 .steve{
     width: 400px;
-    height: 000px;
+    height: 450px;
 }
 .hero:hover .steve{
     transform: scale(1.3);
