@@ -1,28 +1,78 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.nav-link{
-    width: fit-content;
-}
-.navbar-nav .nav-link:active , .navbar-nav .nav-link:hover ,.active{
-    border-bottom: 3px solid black;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: black;
-}
-.hero{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../IMGS/Background_hero.jfif);
-    background-size: cover;
-    background-position: center;
-}
-.steve{
-    width: 400px;
-    height: 450px;
-}
-.hero:hover .steve{
-    transform: scale(1.2);
-    transition: all 0.5s ease-in;
+
+body {
+    font-family: "VT323", monospace;
+    font-size: large;
+    font-weight: bold;
 }
 
+.nav-link {
+    width: fit-content;
+    color: gray;
+}
+
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    border-bottom: 3px solid white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../IMGS/Background_hero.jfif);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.steve {
+    width: 400px;
+    height: 450px;
+    transform: scale(1.2);
+    position: relative;
+    bottom: -8px;
+    right: -700px;
+    border: 0;
+}
+
+.steve.active {
+    right: 0px;
+}
+
+.hero:hover .steve {
+    right: 0px;
+    transition: all 0.6s ease-in;
+}
+
+
+
+.rectangle-layer,
+.rectangle-box {
+    width: 40px;
+    height: 40px;
+}
+
+.rectangle-layer {
+    background: #24550CFF;
+    border: 2px #79E444FF solid;
+}
+
+.rectangle-box {
+    background: #5C330AFF;
+    border: 2px #EFAF3FFF solid;
+}
+
+.projects-count {
+    width: 225px;
+    height: 79px;
+    background: #1E2229FF;
+    border-width: 2px #323843FF solid;
+    box-shadow: 4px 4px 0px #00000080, 0px 0px 0px #171a1f00;
+}
