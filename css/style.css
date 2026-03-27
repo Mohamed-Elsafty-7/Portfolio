@@ -10,10 +10,11 @@ body {
     font-weight: bold;
 }
 
-.btn{
+.btn {
     border-radius: 0px;
     box-shadow: 4px 4px 0px #00000080, 0px 0px 0px #171a1f00;
 }
+
 .nav-link {
     width: fit-content;
     color: gray;
@@ -82,25 +83,110 @@ body {
     margin-top: 5px;
 
 }
+
 .hero-box:hover {
     position: relative;
     top: -10px;
     scale: 1.05;
-    transition: all 0.3s ease-in ;
+    transition: all 0.3s ease-in;
 }
+
 .skills-box {
     height: 40px;
     background: #1E2229FF;
     border-width: 2px #323843FF solid;
     box-shadow: 4px 4px 4px 4px #00000080, 0px 0px 0px #171a1f00;
-    color: #51DEFBFF; 
+    color: #51DEFBFF;
 }
+
 .lang-box {
-    min-width: 70%; 
+    min-width: 70%;
     height: 268px;
-    background: #1E2229FF; 
-    border: 4px #323843FF solid; 
+    background: #1E2229FF;
+    border: 4px #323843FF solid;
     box-shadow: 2px 2px#00000080, 0px 0px 0px #171a1f00;
 
 }
 
+.character-card {
+    border: 3px solid #00f5ff;
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.pixel-avatar {
+    width: 100%;
+    max-width: 280px;
+    box-shadow: 4px 4px 4px 4px #00000080, 0px 0px 0px #171a1f00;
+}
+
+.pixel-avatar:hover {
+    transform: translateY(-12px);
+    transition: all 0.3s ease-in;
+}
+.about-info:hover {
+    transform: translateY(-8px);
+    transition: all 0.3s ease-in;
+}
+.status-bar {
+    background: linear-gradient(90deg, #00ff9d, #00f5ff);
+    color: #000;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.section-title {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.lore-box,
+.quest-box {
+    background: #1a1a1a;
+    border: 2px solid #333;
+    
+}
+
+.skill-name {
+    font-size: 12px;       
+    opacity: 0.6;         
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+}
+
+.quest-box {
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.quest-box:hover {
+    transform: translateY(-3px);
+    background-color: #1a1a1a !important;
+}
+
+.quest-box:hover .skill-name {
+    opacity: 1;
+}
+
+.quest-box {
+    box-shadow: inset 0 0 0 2px #000;
+}
+
+.btn-hire {
+    background: linear-gradient(45deg, #00f5ff, #00ff9d);
+    color: #000;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-cyan {
+    background-color: #00f5ff;
+    color: #000;
+    font-weight: bold;
+}
+
+.quote-box {
+    border-left: 6px solid var(--accent);
+    background: #1a1a1a;
+}
