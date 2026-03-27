@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5 text-white" href="#">Mohamed Elsafty</a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-3  ">
+                    <a class="nav-link   " aria-current="page" href="index.html"><i class="ri-home-line"></i> Home</a>
+                    <a class="nav-link " href="about.html"><i class="ri-info-card-line"></i> Skills</a>
+                    <a class="nav-link active" href="projects.html"><i class="ri-pages-fill"></i> Projects</a>
+                    <a class="nav-link  " href="contact.html"><i class="ri-contacts-book-line"></i> Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="bg-dark text-light" style="min-height: 100vh;">
+        <div class="container py-5 ">
+
+            <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="header-icon rounded">
+                    <i class="ri-stack-fill"></i>
+                </div>
+                <div>
+                    <small class="text-muted">LEVEL 02</small>
+                    <h1 class="display-5 fw-bold text-white mb-0">EXPLORATION LOGS</h1>
+                </div>
+            </div>
+
+            <p class="lead text-light mb-5" style="max-width: 700px;">
+            
+                Each project represents a step in my journey as a developer. I focus on building responsive,
+                user-friendly interfaces while continuously improving my problem-solving skills and attention to detail.
+
+                From simple layouts to more dynamic applications, every project is crafted with care, clean code, and a
+                passion for creating meaningful user experiences.
+            
+            </p>
+
+            <div class="nav-filter mb-5 d-flex flex-wrap gap-2">
+                <button id="btn-all" class="btn active px-4">ALL BLOCKS</button>
+                <button id="btn-web" class="btn px-4">Web Modules</button>
+                <button id="btn-python" class="btn px-4">Python</button>
+            </div>
+
+            <div
+                class="d-flex justify-content-between align-items-center border-top border-bottom border-secondary py-3 mb-5">
+                <div>
+                    <span class="text-warning">⚡</span>
+                    <strong>TOTAL PROJECTS: 08</strong>
+                </div>
+                <div>
+                    <span class="text-info">&lt;/&gt;</span>
+                    <strong>TECH STACK: VAST</strong>
+                </div>
+                <div class="text-success">
+                    SYSTEM STATUS: <strong>ONLINE</strong>
+                </div>
+            </div>
+
+            <div class="row g-4" id="projects-container" >
+
+            </div>
+
+        </div>
+    </main>
+    <script src="js/projects.js"></script>
+</body>
+
+</html>

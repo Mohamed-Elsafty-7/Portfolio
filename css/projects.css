@@ -1,0 +1,71 @@
+.header-icon {
+    background: #00f5ff;
+    color: #000;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.nav-filter .btn {
+    background-color: #222;
+    color: #ccc;
+    border: none;
+    border-radius: 0;
+    margin: 0 4px;
+}
+
+.nav-filter .btn.active,
+.nav-filter .btn:hover {
+    background-color: #00f5ff;
+    color: #000;
+    font-weight: bold;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    border: 2px solid #333;
+    transition: all 0.4s;
+    overflow: hidden;
+    box-shadow: 4px 4px 0px #00000080, 0px 0px 0px #171a1f00;
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 245, 255, 0.2);
+}
+
+.project-img {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid #333;
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    background: #222;
+    color: #aaa;
+}
+
+.btn-view {
+    background: linear-gradient(90deg, #00f5ff, #00ff9d);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-view:hover {
+    transform: scale(1.05);
+    color: #000;
+}
+
+.section-title {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
