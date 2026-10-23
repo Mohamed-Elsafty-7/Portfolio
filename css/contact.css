@@ -1,81 +1,119 @@
 .quest-container {
-    max-width: 620px;
+    width: 100%;
+    max-width: 720px;
     margin: auto;
-    background: #1a1a1a;
-    border: 2px solid #333;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    box-shadow: 6px 6px 0 rgb(0 0 0 / 32%);
     overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
 }
 
 .header {
-    background: #111;
-    padding: 20px;
+    position: relative;
+    background: #151a20;
+    padding: clamp(1.25rem, 4vw, 2rem);
     text-align: center;
-    border-bottom: 1px solid #333;
+    border-bottom: 2px solid var(--border);
 }
 
 .quest-title {
-    color: #00f7ff;
-    font-size: 2.2rem;
+    color: var(--accent);
+    font-size: clamp(1.8rem, 6vw, 2.6rem);
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0.06em;
+    line-height: 1.1;
 }
 
 .form-label {
-    color: #00f7ff;
-    font-size: 0.95rem;
-    margin-bottom: 6px;
+    color: var(--accent);
+    font-size: 1.05rem;
+    margin-bottom: 0.45rem;
 }
 
 .form-control {
-    background: #111;
-    border: 1px solid #444;
+    min-height: 48px;
+    background: #11161c;
+    border: 2px solid #414b58;
+    border-radius: 0;
     color: #fff;
-    padding: 12px 16px;
+    padding: 0.75rem 1rem;
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-control::placeholder {
+    color: #9ca7b4;
+    opacity: 1;
 }
 
 .form-control:focus {
-    background: #1a1a1a;
-    border-color: #00f7ff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 247, 255, 0.25);
+    background: #151a20;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.2rem rgb(0 245 255 / 18%);
     color: #fff;
 }
 
-.btn-send {
-    background: #ffaa00;
-    color: #000;
-    font-weight: 600;
-    padding: 14px;
-    border: none;
-    transition: all 0.3s;
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    border-color: #ff6b6b;
 }
 
-.btn-send:hover {
-    background: #ffcc33;
-    transform: translateY(-2px);
+.invalid-feedback {
+    font-size: 0.95rem;
+}
+
+.btn-send {
+    min-height: 52px;
+    background: var(--accent-gold);
+    color: #111;
+    font-weight: 700;
+    padding: 0.8rem 1rem;
+    border: 2px solid #080b0e;
+}
+
+.btn-send:hover,
+.btn-send:focus-visible {
+    background: #ffcc66;
+    color: #111;
 }
 
 .badge-header {
-    background: #ff0000;
+    position: absolute;
+    top: 18px;
+    left: 20px;
     width: 12px;
     height: 12px;
     display: inline-block;
     border-radius: 50%;
-    position: absolute;
-    top: 18px;
-    left: 20px;
+    background: #ff5f57;
+    box-shadow: 18px 0 #febc2e, 36px 0 #28c840;
 }
 
-.hover-link {
-    transition: all 0.3s ease;
+.contact-email {
+    color: var(--accent);
+    overflow-wrap: anywhere;
 }
 
-.hover-link:hover {
-    color: #00f7ff !important;
-    transform: translateX(8px);
+.contact-email:hover {
+    color: var(--accent-green);
 }
 
-footer a {
-    font-size: 1.1rem;
+@media (max-width: 575.98px) {
+    .quest-container .p-4.p-md-5 {
+        padding: 1.1rem !important;
+    }
+
+    .quest-container .row > [class*="col-"] {
+        padding-inline: 0.4rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn-send {
+        transition: none;
+    }
 }
