@@ -78,7 +78,7 @@ body {
     width: 225px;
     height: 79px;
     background: #1E2229FF;
-    border-width: 2px #323843FF solid;
+    border: 2px solid #323843FF;
     box-shadow: 4px 4px 0px #00000080, 0px 0px 0px #171a1f00;
     margin-top: 5px;
 
@@ -94,7 +94,7 @@ body {
 .skills-box {
     height: 40px;
     background: #1E2229FF;
-    border-width: 2px #323843FF solid;
+    border: 2px solid #323843FF;
     box-shadow: 4px 4px 4px 4px #00000080, 0px 0px 0px #171a1f00;
     color: #51DEFBFF;
 }
